@@ -1,0 +1,59 @@
+//API 1 Login User
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+//API 2 Get States
+GET http://localhost:3000/states/
+###
+
+//API 3 Get State
+GET http://localhost:3000/states/2/
+###
+
+//API 4 POST
+POST http://localhost:3000/districts/
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+//API 5 Get District
+GET http://localhost:3000/districts/10/
+###
+
+//API 6 Delete District
+DELETE http://localhost:3000/districts/10/
+###
+
+//API 7 Update District
+PUT http://localhost:3000/districts/1/
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+//API 8 Total Values of Stats
+GET http://localhost:3000/states/1/stats/
+###l
